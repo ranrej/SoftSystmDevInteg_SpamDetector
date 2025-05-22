@@ -1,4 +1,6 @@
-# Assignment 01 - Spam Detector
+# Spam Detector
+
+Project for CSCI 2020U - Software Systems Development & Integration
 
 ## Project Information
 
