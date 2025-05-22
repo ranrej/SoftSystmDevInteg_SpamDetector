@@ -1,0 +1,159 @@
+/* Resetting default styles */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap");
+*{
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: "Poppins",sans-serif;
+
+}
+/* General body styles */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #ecf0f1;
+  color: #333;
+}
+
+/* Main layout styles */
+.header {
+  background-color: #0d0d54;
+  color: #fff;
+  padding: 10px 20px;
+  text-align: left;
+}
+
+.sidebar {
+  position: relative;
+  top:0;
+  bottom: 0;
+  height: 100vh;
+  left: 0;
+  background: #fff;
+  width: 85px;
+  overflow: hidden;
+  box-shadow: 0 20px 35px rgba(0,0,0,0.1);
+  transition: ease-in-out;
+  border-radius: 10px;
+}
+
+.sidebar {
+ width: 280px;
+}
+
+
+.main-content {
+  flex-grow: 1;
+  padding: 20px;
+}
+.logo{
+  text-align: center;
+  display: flex;
+  margin: 10px 0 0 10px;
+  transition: all 0.5s ease;
+}
+.logo img{
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+}
+.logo span{
+  font-weight: bold;
+  padding-left: 15px;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+a{
+  position: relative;
+  color: rgb(83, 84, 85);
+  font-size: 14px;
+  display: table;
+  width: 280px;
+  padding: 10px;
+  border-radius: 10px;
+}
+nav .fas{
+  position: relative;
+  width: 70px;
+  height: 40px;
+  top: 2px;
+  font-size: 20px;
+  text-align: center;
+}
+nav.item{
+  position: relative;
+  top: 12px;
+  margin-left: 10px;
+}
+a:hover{
+  background: rgb(216, 233, 252);
+}
+
+.content {
+  position: absolute;
+  left: 270px;
+  top: 110px;
+
+  background: #fff;
+  padding: 15px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  width: 30%;
+}
+
+.stats-box {
+  background: #fff;
+  padding: 15px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  width: 30%;
+  text-align: center;
+  margin-left: 400px;
+}
+
+/* Table styles */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table-container {
+  height: 80vh;
+  overflow: auto;
+  border-radius: 5px;
+}
+
+th, td {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  text-align: left;
+}
+
+th {
+  background-color: #ea9409;
+  color: white;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+/* Responsive layout */
+@media (min-width: 768px) {
+  .container {
+    display: flex;
+  }
+
+  .sidebar {
+    width: 250px;
+    flex: 0 0 250px;
+  }
+
+  .main-content {
+    flex: 1;
+  }
+}
